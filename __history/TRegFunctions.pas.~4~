@@ -1,0 +1,43 @@
+unit TRegFunctions;
+
+interface
+  uses
+  Windows;
+  procedure regWrite(writeDir:String);
+  function  regRead() : String;
+
+implementation
+  uses
+  Registry;
+///////////////////////////////regWrite////////////////////////////////////
+  procedure regWrite(writeDir:String);
+  var
+    writeRegPath : TRegistry;
+  begin
+    writeRegPath := TRegistry.Create();
+      try
+        writeRegPath.RootKey := HKEY_CURRENT_USER;
+        writeRegPath.OpenKey(OPEN_KEY_VALUE,true);
+        writeRegPath.WriteString('LastPath',writeDir);
+      finally
+        writeRegPath.Free;
+      end;
+  end;
+
+  function  regRead() : String;
+  var
+    readRegPath : TRegistry;
+    readPath    : String;
+  begin
+    readRegPath := TRegistry.Create();
+      try
+        readRegPath.RootKey := HKEY_CURRENT_USER;
+        readRegPath.OpenKey('Software\RegProgram',true);
+        readPath := readRegPath.ReadString('LastPath');
+        Result := readPath;
+      finally
+        readRegPath.Free();
+      end;
+  end;
+
+end.

@@ -1,0 +1,8 @@
+unit strConsts;
+
+interface
+const
+  DEFAULT_DIRECTORY = 'C:\\';
+implementation
+
+end.

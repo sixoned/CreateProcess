@@ -1,0 +1,27 @@
+unit TRegFunctions;
+
+interface
+  uses
+  Windows;
+  procedure regWrite(writeDir:String);
+
+implementation
+  uses
+  Registry;
+///////////////////////////////regWrite////////////////////////////////////
+  procedure regWrite(writeDir:String);
+  var
+    writeRegPath : TRegistry;
+  begin
+    writeRegPath := TRegistry.Create();
+      try
+        writeRegPath.RootKey := HKEY_CURRENT_USER;
+        writeRegPath.OpenKey('Software\RegProgram',true);
+        writeRegPath.WriteString('LastPath',writeDir);
+      finally
+        writeRegPath.Free;
+      end;
+  end;
+
+
+end.

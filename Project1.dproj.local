@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.613,C:\Temp\Proj\Unit1.dfm=C:\Users\Corona\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.677,C:\Temp\Proj\Project1.dproj=C:\Users\Corona\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.613,C:\Temp\Proj\Unit1.pas=C:\Users\Corona\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.727,=C:\Users\Corona\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.354,=C:\Users\Corona\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021.04.23 18:47:49.016,=C:\Delphi\Proj\Unit2.pas</Transaction>
+    <Transaction>2021.04.23 18:48:32.375,C:\Delphi\Proj\TRegFunctions.pas=C:\Delphi\Proj\Unit2.pas</Transaction>
+    <Transaction>2021.04.23 19:01:59.463,=C:\Delphi\Proj\Unit2.pas</Transaction>
+    <Transaction>2021.04.23 19:03:13.323,C:\Delphi\Proj\strConsts.pas=C:\Delphi\Proj\Unit2.pas</Transaction>
+    <Transaction>2021.04.23 21:29:26.138,=C:\Delphi\Proj\Unit2.pas</Transaction>
+    <Transaction>2021.04.23 21:29:44.258,C:\Delphi\Proj\CreateProcFunctions.pas=C:\Delphi\Proj\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>
